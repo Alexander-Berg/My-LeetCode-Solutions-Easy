@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'Berg.example.code'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains:annotations:20.1.0'
+    implementation 'junit:junit:4.13.1'
+    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    testImplementation 'junit:junit:4.13.2'
+    testRuntimeOnly  'junit:junit:4.13.2'
+
+}
+
+test {
+    useJUnitPlatform()
+}
